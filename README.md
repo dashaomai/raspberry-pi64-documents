@@ -7,9 +7,11 @@ https://wiki.debian.org/WiFi/HowToUse#wpa_supplicant
 
 因为 pi64 上默认没有找到任何编辑软件，所以我上来添加 wifi 的方法如下：
 
+```
 sudo cp /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf.bak
 sudo cat /etc/wpa_supplicant/wpa_supplicant.conf > ~/wpa.conf
 wpa_passphrase Moxian Moxian0712 >> ~/wpa.conf
 sudo cp ~/wpa.conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
 
 然后重启系统生效
