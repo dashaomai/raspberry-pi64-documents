@@ -31,3 +31,12 @@ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 0600 ~/.ssh/authorized_keys
 ```
+
+## 安装配置 jdk（Oracle）
+
+```
+sudo apt install openjdk-8-jdk -y
+sudo ln -s /usr/lib/jvm/java-8-openjdk-arm64 /usr/lib/jvm/default-java
+vim .bashrc
+export JAVA_HOME=/usr/lib/jvm/default-java
+```
