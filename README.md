@@ -15,3 +15,11 @@ sudo cp ~/wpa.conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
 然后重启系统生效
+
+## 必备软件
+
+```
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install vim git -y
+```
