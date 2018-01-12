@@ -23,3 +23,11 @@ sudo apt update -y
 sudo apt upgrade -y
 sudo apt install vim git -y
 ```
+
+## 为 Hadoop 设置本地 openssl 互信
+
+```
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 0600 ~/.ssh/authorized_keys
+```
